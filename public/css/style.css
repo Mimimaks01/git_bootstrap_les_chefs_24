@@ -85,5 +85,32 @@ body .jep {
   align-items: flex-end;
   padding: 10px;
 }
+body .pich img {
+  height: 25vh;
+  width: 40vh;
+  border-radius: 1rem;
+  border: 5px solid #aaaaaa;
+}
+body .pich button {
+  height: auto;
+  border-radius: 10px;
+  background-color: #c42f43;
+  border: none;
+  color: white;
+  width: 30vh;
+  padding: 1vh;
+  transform: translateY(-20px);
+  margin-left: 5vh;
+}
+body .az button {
+  margin-top: 10vh;
+  height: auto;
+  border-radius: 20px;
+  background-color: #c42f43;
+  border: none;
+  color: white;
+  width: auto;
+  padding: 2vh;
+}
 
 /*# sourceMappingURL=style.css.map */
