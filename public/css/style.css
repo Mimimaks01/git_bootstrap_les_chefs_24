@@ -61,9 +61,29 @@ body .fond {
 body .blanc {
   color: white;
 }
-
-span {
+body span {
   color: #c42d40;
+}
+body .fond2 {
+  background: url(../images/book_table_bg.jpg);
+  border-radius: 10px;
+}
+body .sep input {
+  border-radius: 10px;
+  height: 5vh;
+  margin: 10px;
+}
+body .zb {
+  border-radius: 30px;
+  width: auto;
+  padding: 15px;
+  background-color: #c42f43;
+  border: none;
+  color: white;
+}
+body .jep {
+  align-items: flex-end;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
