@@ -33,7 +33,6 @@ body header .nav2 {
 }
 body .bam {
   background: url(../images/main_bg.jpg);
-  height: 120vh;
 }
 body .geant {
   height: 30vh;
@@ -55,7 +54,16 @@ body .arondie {
 }
 body .pam {
   background-color: white;
-  height: 116vh;
+}
+body .fond {
+  background: url(../images/team_background.jpg);
+}
+body .blanc {
+  color: white;
+}
+
+span {
+  color: #c42d40;
 }
 
 /*# sourceMappingURL=style.css.map */
