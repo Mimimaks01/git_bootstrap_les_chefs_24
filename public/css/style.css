@@ -112,5 +112,34 @@ body .az button {
   width: auto;
   padding: 2vh;
 }
+body .azp {
+  background: url(../images/testimonials_background.jpg);
+}
+body .azp h1 {
+  color: white;
+}
+body .azp p {
+  color: white;
+}
+body .azp h2 {
+  color: white;
+}
+body .jo {
+  border-radius: 140px;
+  border: 5px solid white;
+  margin: 10px;
+}
+body .ici {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 40vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .pamm {
+  background: url(../images/main_bg.jpg);
+}
 
 /*# sourceMappingURL=style.css.map */
