@@ -33,10 +33,29 @@ body header .nav2 {
 }
 body .bam {
   background: url(../images/main_bg.jpg);
-  height: 100vh;
+  height: 120vh;
 }
 body .geant {
   height: 30vh;
+}
+body .ici p {
+  margin-bottom: 0rem;
+  font-size: 1.5vh;
+}
+body .ici button {
+  height: 30px;
+  color: #c42f43;
+  border: none;
+  margin-right: 1vh;
+  width: 8vh;
+}
+body .arondie {
+  border-radius: 100px;
+  height: 100px;
+}
+body .pam {
+  background-color: white;
+  height: 116vh;
 }
 
 /*# sourceMappingURL=style.css.map */
