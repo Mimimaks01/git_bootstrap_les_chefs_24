@@ -5,26 +5,57 @@
 
 body
     header
-        background: url(../images/backback.png)
-        height: 70vh
-        background-position: center
-        .yo
-            gap: 0rem !important
-        li
-            padding: 1vh
-            color: #ffff
-            margin: 0
-            list-style-type: none
-            &:hover
-                background-color:#c42d40
-        .nav1
-            align-self: center
-            border-top: 1px solid #ffff
-            border-bottom: 1px solid #ffff
-        .nav2
-            align-self: center    
-            border-top: 1px solid #ffff
-            border-bottom: 1px solid #ffff     
+        background-image: url(../../public/images/banner1.jpg)
+        background-color: #282828
+        background-blend-mode: multiply
+        background-size: cover
+        height: 100vh
+        border-bottom: 15px solid transparent !important
+        border-image: url("../../public/images/bottom_decoration_img.png") repeat !important
+        border-image-slice: 30 !important
+        .jin
+            margin-left: 120px
+        .nav-hover
+            ul
+                li:hover
+                    background-color:#c42f43     
+        .nav-main
+            margin-left: 250px
+        .border-nav
+            border-top: 1px solid white
+            border-bottom: 1px solid white
+        .carou1
+            margin-top: 200px
+        .font-carou
+            color: white
+        .occasion
+            font-size: 50px
+        .taste
+            font-size: 50px
+            color: #c42f43
+        .makes
+            font-size: 40px !important
+        .btn-1
+            font-size: 11px
+            padding: 0.5rem
+        .btn-2
+            background-color: #c42f43
+            font-size: 11px
+            padding: 0.5rem
+            color: white
+        .carousel-indicators button
+                width: 10px !important
+                height: 10px !important
+                border-radius: 100% 
+        .carousel-indicators button.active
+                width: 5px !important
+                height: 5px !important
+                border-radius: 100%
+                border: 1.5px solid  white  !important
+                margin: 1px !important
+                background-clip: content-box !important
+                padding: .2rem !important
+                margin-top: 8px !important  
     .bam
         background: url(../images/main_bg.jpg)
     .geant
@@ -121,8 +152,8 @@ body
         background-color: #c42f43
         color: #fff
     .pampam
-        background: url(../images/team_background.jpg)
-        background-position: right
+        background: url(../images/footer_background.jpg)
+        background-size: cover
         color: #fff
     .bembem
         color: #fff
@@ -134,3 +165,42 @@ body
     .bep
         background-color: #c42f43
         height: 8vh
+@media screen and (min-width: 320px) and (max-width: 767px)
+    .nav-main
+        right: 270px !important
+        margin-left: 0 !important
+        background-blend-mode: multiply 
+        ul
+            background-color: #282627
+            opacity: 0.9
+            li
+                a
+                    color: white !important
+    .ab
+        display: flex
+        justify-content: center
+        align-items: center
+    .ici
+        width: 100%
+        img
+            display: flex
+    .poz
+        text-align: center
+    .jap
+        width: 50px
+    .jep
+        margin-left: -35px
+@media screen and (min-width: 768px) and (max-width: 1023px)
+    .ici
+        width: 100%
+    .jin
+        margin-left: -170px !important
+    .nav-main
+        margin-left: 40px 
+        font-size: 12px
+    .joa
+        margin-left: 70px
+    .pampam
+        display: flex
+        align-items: center
+        

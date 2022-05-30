@@ -12,41 +12,103 @@
 </head>
 
 <body>
-  <header class="container-fluid">
-    <nav class="bim container">
-      <div class="la row text-center nav mx-auto">
-        <div class="nav1 col-12 col-md-8  mx-auto col-lg-5">
-          <ul class="yo d-md-flex">
-            <li class="col-lg-3">HOME</li>
-            <li class="col-lg-3">ABOUT US</li>
-            <li class="col-lg-3">MENU LIST</li>
-            <li class="col-lg-3">TEAM</li>
+  <header class="d-flex flex-column align-items-center">
+    <nav class="nav-main navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="nav-m container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="btn-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="jin nav-hover collapse navbar-collapse" id="navbarNav">
+          <ul class="border-nav navbar-nav text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">menu list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">team</a>
+            </li>
           </ul>
-        </div>
-        <div class="nav-img col-12 col-md-5 col-lg-2 mx-auto">
-          <img src="./public/images/logo.png" alt="">
-        </div>
-        <div class="nav2 col-12 col-md-10 mx-auto col-lg-5">
-          <ul class="d-md-flex">
-            <li class="col-lg-3">RESERVATION</li>
-            <li class="col-lg-3">BLOG</li>
-            <li class="col-lg-3">TESTIMONIALS</li>
-            <li class="col-lg-3">CONTACT US</li>
+          <ul class="navbar-nav text-uppercase">
+
+            <a class="nav-link active" aria-current="page" href="#"><img src="./public/images/logo.png" alt=""></a>
+
+          </ul>
+          <ul class="border-nav navbar-nav text-uppercase text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#reserv">reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testim">testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact us</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="mx-auto text-center">
-      <div>
-        <h1>
-          Whatever your OCCASION, TASTE makes it one to REMBEMBER!
-        </h1>
-        <div>
-          <button>PURCHASE THEME</button>
-          <button>LEARN MORE</button>
+
+    <div id="carouselExampleIndicators" class="carou1 carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="font-carou carousel-item active text-center">
+          <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span
+              class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span
+              class="makes">remember!</span>
+          </p>
+          <div>
+            <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
+            </button>
+            <button class="btn-2 text-uppercase rounded-pill border-0">learn more
+            </button>
+          </div>
+        </div>
+        <div class="font-carou carousel-item text-center">
+          <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span
+              class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span
+              class="makes">remember!</span>
+          </p>
+          <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
+          </button>
+          <button class="btn-2 text-uppercase rounded-pill border-0">learn more
+          </button>
+        </div>
+        <div class="font-carou carousel-item text-center">
+          <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span
+              class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span
+              class="makes">remember!</span>
+          </p>
+          <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
+          </button>
+          <button class="btn-2 text-uppercase rounded-pill border-0">learn more
+          </button>
         </div>
       </div>
     </div>
+    <div class="carousel-indicators rounded-circle">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1">
+      </button>
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""
+        aria-label="Slide 2">
+      </button>
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=""
+        aria-label="Slide 3">
+      </button>
+    </div>
+
   </header>
 
   <section class="bam col-12 d-flex justify-content-center">
@@ -56,7 +118,9 @@
         <h1 class="mt-5"><span>OUR</span> Story</h1>
         <img src="/public/images/box-right-top.png" alt="">
       </div>
-      <div class="text-center"><img src="/public/images/decoration_line.png" alt=""></div>
+      <div class="text-center"><img src="/public/images/decoration_line.png" alt="" class="col-12 col-md-9 col-lg-4">
+      </div>
+
       <div class="col-6 mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, totam
         sunt asperiores officia omnis labore assumenda nobis incidunt animi ipsa molestiae nulla. Labore ad dolores
         corrupti laboriosam molestiae voluptate laborum mollitia eius dolorum explicabo officiis, reiciendis officia
@@ -70,9 +134,10 @@
         <h1><span>Our </span>Menu List</h1>
 
       </div>
-      <div class="jep text-center"><img src="/public/images/decoration_line.png" alt=""></div>
-      <div class="row">
-        <div class="col-2 d-flex justify-content-center">
+      <div class="jep text-center "><img src="/public/images/decoration_line.png" alt="" class="col-12 col-md-9 col-lg-4"></div>
+
+      <div class="row col-12 d-flex flex-md-row flex-column">
+        <div class="col-lg-2 col-12 d-flex flex-md-column text-center flex-lg-column flex-row justify-content-center">
           <div class="list-group" id="list-tab" style="font-size: 10vh;" role="tablist">
 
             <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
@@ -80,7 +145,7 @@
 
             <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
               href="#list-profile" role="tab" aria-controls="list-profile">
-              <p>yo</p>
+              <i class="fa-solid fa-bowl-food"></i>
             </a>
 
             <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
@@ -92,78 +157,78 @@
           </div>
 
         </div>
-        <div class="ici col-md-8">
+        <div class="ici flex-column col-lg-8 col-12">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+            <div class="tab-pane poz fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11 ">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_1.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
@@ -172,75 +237,75 @@
               <hr>
             </div>
             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_2.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
@@ -249,75 +314,75 @@
               <hr>
             </div>
             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div class="ab"><img class="arondie" src="/public/images/menu_image_3.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
@@ -327,75 +392,75 @@
             </div>
             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
 
-              <div class="d-flex">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-              </div>
-              <hr>
-              <div class="d-flex">
-                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
-                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
               </div>
               <hr>
-              <div class="d-flex">
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
                 <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
-                <div class="d-flex flex-column col-md-8 justify-content-center ms-3">
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+              </div>
+              <hr>
+              <div class="d-flex flex-column flex-md-row col-md-6 flex-lg-row col-lg-11">
+                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button>$25</button></div>
+                <div><img class="arondie" src="/public/images/menu_image_4.jpg" alt=""> </div>
+                <div class="d-flex flex-column col-md-12 justify-content-center ms-3">
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!</p>
                 </div>
@@ -449,8 +514,8 @@
           </span> your table</h1>
         <img src="/public/images/box-right-top-grey.png" alt="">
       </div>
-      <div class="text-center mx-auto"><img src="/public/images/decoration_line.png" alt=""></div>
-      <div class="fond2 col-8 d-flex flex-column gap-1 mx-auto text-center">
+      <div class="text-center mx-md-auto jap"><img class="jap" src="/public/images/decoration_line.png" alt=""></div>
+      <div class="fond2 col-12 col-md-8 d-flex flex-column gap-1 mx-auto text-center">
         <div class="jep d-flex justify-content-center">
           <p class="blanc">For any query please call us at:</p>
           <h1 class="blanc">+91-1234567890</h1>
@@ -481,15 +546,15 @@
       <div class="row p-5 text-center">
         <h1><span>OUR</span> Blog</h1>
       </div>
-      <div class="pich d-flex justify-content-center">
-        <div class="col-3 d-flex flex-column">
+      <div class="pich d-flex flex-column flex-md-row justify-content-center ">
+        <div class="col-12 col-md-3 d-flex flex-column">
           <img src="/public/images/blog_img1.jpg" alt="">
           <button>12 April 2017/20 comment/35 Likes</button>
           <p>Lorem, ipsum.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatem.</p>
         </div>
-        <div class="pich d-flex justify-content-center">
-          <div class="col-7 d-flex flex-column">
+        <div class="pich joa d-flex justify-content-center">
+          <div class="col-12 col-md-7 d-flex flex-column">
             <img src="/public/images/blog_img2.jpg" alt="">
             <button>12 April 2017/20 comment/35 Likes</button>
             <p>Lorem, ipsum.</p>
@@ -535,7 +600,8 @@
   <section class="pamm">
     <div class="row p-3 text-center">
       <h1><span>OUR</span>contact</h1>
-      <div class="jep text-center"><img src="/public/images/decoration_line.png" alt=""></div>
+      <div class="jep col-12 text-center"><img src="/public/images/decoration_line.png" alt=""
+          class="col-12 col-md-9 col-lg-4"></div>
     </div>
     <div class="izi container col-8 col-md-5 col-lg-3 py-5 my-5 text-center">
       <div class="row">
@@ -555,22 +621,25 @@
     </div>
   </section>
   <footer>
-    <section class="pampam d-flex flex-column d-md-flex flex-md-row justify-content-center">
+    <section class="pampam d-flex flex-column d-lg-flex flex-lg-row justify-content-center">
 
-      <div class="d-flex flex-column col-12 col-md-4 mb-5">
+      <div class="text-lg-start text-md-center flex-column col-12 col-md-12 col-lg-4 mb-5">
         <div>
           <h1 class="p-5">About us</h1>
         </div>
         <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque impedit officiis expedita modi
+          <p class="col-md-8 mx-md-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque
+            impedit officiis expedita modi
             beatae eveniet natus ipsam magnam, minima enim omnis, dolore laudantium voluptatibus veniam ut asperiores
             iste quae. Ipsam voluptatum iusto omnis a dicta quasi, necessitatibus quis rerum.</p>
+          <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-solid fa-p"></i>
+            <i class="fa-solid fa-info"></i></div>
         </div>
-        <div><i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-google-plus-g"></i>
-          <i class="fa-solid fa-p"></i>
-          <i class="fa-solid fa-info"></i></div>
       </div>
+
       <div class="d-flex flex-column col-12 col-md-4">
         <h1 class="p-5">INSTAGRAM</h1>
         <div class="d-flex gap-1">

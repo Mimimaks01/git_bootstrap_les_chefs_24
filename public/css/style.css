@@ -5,31 +5,68 @@
 }
 
 body header {
-  background: url(../images/backback.png);
-  height: 70vh;
-  background-position: center;
+  background-image: url(../../public/images/banner1.jpg);
+  background-color: #282828;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 15px solid transparent !important;
+  border-image: url("../../public/images/bottom_decoration_img.png") repeat !important;
+  border-image-slice: 30 !important;
 }
-body header .yo {
-  gap: 0rem !important;
+body header .jin {
+  margin-left: 120px;
 }
-body header li {
-  padding: 1vh;
+body header .nav-hover ul li:hover {
+  background-color: #c42f43;
+}
+body header .nav-main {
+  margin-left: 250px;
+}
+body header .border-nav {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+body header .carou1 {
+  margin-top: 200px;
+}
+body header .font-carou {
   color: white;
-  margin: 0;
-  list-style-type: none;
 }
-body header li:hover {
-  background-color: #c42d40;
+body header .occasion {
+  font-size: 50px;
 }
-body header .nav1 {
-  align-self: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+body header .taste {
+  font-size: 50px;
+  color: #c42f43;
 }
-body header .nav2 {
-  align-self: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+body header .makes {
+  font-size: 40px !important;
+}
+body header .btn-1 {
+  font-size: 11px;
+  padding: 0.5rem;
+}
+body header .btn-2 {
+  background-color: #c42f43;
+  font-size: 11px;
+  padding: 0.5rem;
+  color: white;
+}
+body header .carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+body header .carousel-indicators button.active {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 100%;
+  border: 1.5px solid white !important;
+  margin: 1px !important;
+  background-clip: content-box !important;
+  padding: 0.2rem !important;
+  margin-top: 8px !important;
 }
 body .bam {
   background: url(../images/main_bg.jpg);
@@ -147,8 +184,8 @@ body .izi {
   color: #fff;
 }
 body .pampam {
-  background: url(../images/team_background.jpg);
-  background-position: right;
+  background: url(../images/footer_background.jpg);
+  background-size: cover;
   color: #fff;
 }
 body .bembem {
@@ -162,6 +199,69 @@ body .bembem {
 body .bep {
   background-color: #c42f43;
   height: 8vh;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav-main {
+    right: 270px !important;
+    margin-left: 0 !important;
+    background-blend-mode: multiply;
+  }
+  .nav-main ul {
+    background-color: #282627;
+    opacity: 0.9;
+  }
+  .nav-main ul li a {
+    color: white !important;
+  }
+
+  .ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ici {
+    width: 100%;
+  }
+  .ici img {
+    display: flex;
+  }
+
+  .poz {
+    text-align: center;
+  }
+
+  .jap {
+    width: 50px;
+  }
+
+  .jep {
+    margin-left: -35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .ici {
+    width: 100%;
+  }
+
+  .jin {
+    margin-left: -170px !important;
+  }
+
+  .nav-main {
+    margin-left: 40px;
+    font-size: 12px;
+  }
+
+  .joa {
+    margin-left: 70px;
+  }
+
+  .pampam {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
